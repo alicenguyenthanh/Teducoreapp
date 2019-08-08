@@ -10,7 +10,6 @@ namespace TeduCoreApp.Data.EF.Repositories
     {
         public FunctionRepository(AppDbContext context) : base(context)
         {
-            //lesson 22 - 13
         }
     }
 }
