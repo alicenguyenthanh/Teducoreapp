@@ -1490,3 +1490,511 @@ WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
 2019-08-14T16:45:24.5517350+07:00 0HLP0JG6K70T2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44344/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
 2019-08-14T16:45:24.5713458+07:00 0HLP0JG6K70T2:00000004 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png"'. Physical path: '"C:\My Store\2.Project\Tedu\teducoreapp\TeduCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\tree_icons.png"' (27b0a520)
 2019-08-14T16:45:24.5920612+07:00 0HLP0JG6K70T2:00000004 [INF] Request finished in 70.8942ms 200 image/png (791a596a)
+2019-08-14T17:10:01.3520898+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:10:02.0551940+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-08-14T17:10:02.1200452+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-08-14T17:10:02.1626132+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-08-14T17:10:02.2575787+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-08-14T17:10:02.2868051+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-08-14T17:10:02.3177174+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-08-14T17:10:02.3469476+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-08-14T17:10:02.3680205+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-08-14T17:10:02.3852046+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-08-14T17:10:02.4166024+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-08-14T17:10:02.4643984+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-08-14T17:10:02.4979881+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-08-14T17:10:03.1285888+07:00 0HLP0JU99L5MD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/   (ca22a1cb)
+2019-08-14T17:10:03.1348569+07:00 0HLP0JU99L5ME:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:56851/  0 (ca22a1cb)
+2019-08-14T17:10:03.1955811+07:00 0HLP0JU99L5ME:00000001 [INF] Request finished in 89.663ms 200  (791a596a)
+2019-08-14T17:10:03.6206173+07:00 0HLP0JU99L5MD:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-08-14T17:10:03.6490812+07:00 0HLP0JU99L5MD:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-08-14T17:10:03.6919482+07:00 0HLP0JU99L5MD:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-08-14T17:10:03.7182794+07:00 0HLP0JU99L5MD:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-08-14T17:10:03.7566679+07:00 0HLP0JU99L5MD:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 127.4454ms (afa2e885)
+2019-08-14T17:10:03.8900904+07:00 0HLP0JU99L5MD:00000001 [INF] Request finished in 692.4459ms 302  (791a596a)
+2019-08-14T17:10:04.0389456+07:00 0HLP0JU99L5ME:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-08-14T17:10:04.2872525+07:00 0HLP0JU99L5ME:00000002 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:10:04.3401355+07:00 0HLP0JU99L5ME:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-08-14T17:10:12.2772437+07:00 0HLP0JU99L5ME:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-08-14T17:10:14.3471118+07:00 0HLP0JU99L5ME:00000002 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 10081.4984ms (afa2e885)
+2019-08-14T17:10:14.4396668+07:00 0HLP0JU99L5ME:00000002 [INF] Request finished in 10494.5734ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:10:47.6385684+07:00 0HLP0JU99L5MD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin   (ca22a1cb)
+2019-08-14T17:10:47.6749687+07:00 0HLP0JU99L5MD:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:10:48.2228948+07:00 0HLP0JU99L5MD:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-08-14T17:10:48.2715629+07:00 0HLP0JU99L5MD:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 614.0343ms (afa2e885)
+2019-08-14T17:10:48.3198320+07:00 0HLP0JU99L5MD:00000002 [INF] Request finished in 658.7483ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:11:01.0343057+07:00 0HLP0JU99L5ME:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44344/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-08-14T17:11:01.0883301+07:00 0HLP0JU99L5ME:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:01.1188686+07:00 0HLP0JU99L5ME:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:01.2580688+07:00 0HLP0JU99L5ME:00000003 [INF] Executed DbCommand ("53"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-08-14T17:11:01.4446297+07:00 0HLP0JU99L5ME:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-08-14T17:11:01.5043163+07:00 0HLP0JU99L5ME:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-08-14T17:11:01.5327259+07:00 0HLP0JU99L5ME:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-08-14T17:11:01.5753173+07:00 0HLP0JU99L5ME:00000003 [INF] Executed DbCommand ("8"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-08-14T17:11:01.5916354+07:00 0HLP0JU99L5ME:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-08-14T17:11:01.6042993+07:00 0HLP0JU99L5ME:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-08-14T17:11:01.6145824+07:00 0HLP0JU99L5ME:00000003 [INF] User logged in. (fdce0db4)
+2019-08-14T17:11:01.6300381+07:00 0HLP0JU99L5ME:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:11:01.6944930+07:00 0HLP0JU99L5ME:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 637.1364ms (afa2e885)
+2019-08-14T17:11:01.7080357+07:00 0HLP0JU99L5ME:00000003 [INF] Request finished in 668.9055ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:11:01.7312595+07:00 0HLP0JU99L5MD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/Home/Index   (ca22a1cb)
+2019-08-14T17:11:01.7455685+07:00 0HLP0JU99L5MD:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:01.7622098+07:00 0HLP0JU99L5MD:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:01.7741774+07:00 0HLP0JU99L5MD:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:02.1487876+07:00 0HLP0JU99L5MD:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-08-14T17:11:02.5257232+07:00 0HLP0JU99L5MD:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:02.5826857+07:00 0HLP0JU99L5MD:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:11:03.0239082+07:00 0HLP0JU99L5MD:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 1261.1688ms (afa2e885)
+2019-08-14T17:11:03.2408346+07:00 0HLP0JU99L5MD:00000003 [INF] Request finished in 1305.0017ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:11:09.7879818+07:00 0HLP0JU99L5ME:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:11:09.7997720+07:00 0HLP0JU99L5ME:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:09.8102776+07:00 0HLP0JU99L5ME:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:09.8226761+07:00 0HLP0JU99L5ME:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:10.2955479+07:00 0HLP0JU99L5ME:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:11:10.3484412+07:00 0HLP0JU99L5ME:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:10.3687655+07:00 0HLP0JU99L5ME:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:11:10.4060298+07:00 0HLP0JU99L5ME:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 590.0222ms (afa2e885)
+2019-08-14T17:11:10.4701928+07:00 0HLP0JU99L5ME:00000004 [INF] Request finished in 634.6529ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:11:10.7769789+07:00 0HLP0JU99L5MD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:11:10.7910117+07:00 0HLP0JU99L5MD:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:10.8297291+07:00 0HLP0JU99L5MD:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:10.8465391+07:00 0HLP0JU99L5MD:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:10.8758353+07:00 0HLP0JU99L5MD:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:11.0945934+07:00 0HLP0JU99L5MD:00000004 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:11:11.1906852+07:00 0HLP0JU99L5MD:00000004 [INF] Executed DbCommand ("18"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:11.2528313+07:00 0HLP0JU99L5MD:00000004 [INF] Executed DbCommand ("33"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:11.2665264+07:00 0HLP0JU99L5MD:00000004 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:11.2890219+07:00 0HLP0JU99L5MD:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:11.2984613+07:00 0HLP0JU99L5MD:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:11:11.3390798+07:00 0HLP0JU99L5MD:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 533.5826ms (afa2e885)
+2019-08-14T17:11:11.3775760+07:00 0HLP0JU99L5MD:00000004 [INF] Request finished in 581.3514ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:11:15.7037431+07:00 0HLP0JU99L5ME:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:11:15.7205243+07:00 0HLP0JU99L5ME:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:15.7315714+07:00 0HLP0JU99L5ME:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:15.7396128+07:00 0HLP0JU99L5ME:00000005 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:15.7503000+07:00 0HLP0JU99L5ME:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:11:15.7588185+07:00 0HLP0JU99L5ME:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:15.7758711+07:00 0HLP0JU99L5ME:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:11:15.7952279+07:00 0HLP0JU99L5ME:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 57.062ms (afa2e885)
+2019-08-14T17:11:15.8432292+07:00 0HLP0JU99L5ME:00000005 [INF] Request finished in 106.4978ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:11:16.0912541+07:00 0HLP0JU99L5MD:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:11:16.3031807+07:00 0HLP0JU99L5MD:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:16.3522110+07:00 0HLP0JU99L5MD:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:16.3842536+07:00 0HLP0JU99L5MD:00000005 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:16.4450004+07:00 0HLP0JU99L5MD:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:16.4934127+07:00 0HLP0JU99L5MD:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:11:16.5106266+07:00 0HLP0JU99L5MD:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:16.5261638+07:00 0HLP0JU99L5MD:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:16.5369786+07:00 0HLP0JU99L5MD:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:16.5545658+07:00 0HLP0JU99L5MD:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:16.5619873+07:00 0HLP0JU99L5MD:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:11:16.5721222+07:00 0HLP0JU99L5MD:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 258.777ms (afa2e885)
+2019-08-14T17:11:16.5854721+07:00 0HLP0JU99L5MD:00000005 [INF] Request finished in 619.385ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:11:32.6236561+07:00 0HLP0JU99L5ME:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:11:32.6339848+07:00 0HLP0JU99L5ME:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:32.6428532+07:00 0HLP0JU99L5ME:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:32.6529708+07:00 0HLP0JU99L5ME:00000006 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:32.6596073+07:00 0HLP0JU99L5ME:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:11:32.6676388+07:00 0HLP0JU99L5ME:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:32.6811328+07:00 0HLP0JU99L5ME:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:11:32.7840471+07:00 0HLP0JU99L5ME:00000006 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 48.1266ms (afa2e885)
+2019-08-14T17:11:32.9283535+07:00 0HLP0JU99L5ME:00000006 [INF] Request finished in 213.6526ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:11:33.1238965+07:00 0HLP0JU99L5MD:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:11:33.2060767+07:00 0HLP0JU99L5MD:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:11:33.2213399+07:00 0HLP0JU99L5MD:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:11:33.2952768+07:00 0HLP0JU99L5MD:00000006 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:11:33.3635627+07:00 0HLP0JU99L5MD:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:11:33.3942357+07:00 0HLP0JU99L5MD:00000006 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:11:33.4177683+07:00 0HLP0JU99L5MD:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:33.4363093+07:00 0HLP0JU99L5MD:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:33.4644238+07:00 0HLP0JU99L5MD:00000006 [INF] Executed DbCommand ("8"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:33.4748309+07:00 0HLP0JU99L5MD:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:11:33.4809412+07:00 0HLP0JU99L5MD:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:11:33.4899668+07:00 0HLP0JU99L5MD:00000006 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 273.9802ms (afa2e885)
+2019-08-14T17:11:33.4991938+07:00 0HLP0JU99L5MD:00000006 [INF] Request finished in 565.1037ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:12:42.3144058+07:00 0HLP0JU99L5MF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:12:42.3290770+07:00 0HLP0JU99L5MF:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:12:42.3409617+07:00 0HLP0JU99L5MF:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:12:42.3567620+07:00 0HLP0JU99L5MF:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:12:42.3677852+07:00 0HLP0JU99L5MF:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:12:42.3768027+07:00 0HLP0JU99L5MF:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:12:42.4030394+07:00 0HLP0JU99L5MF:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:12:42.4252126+07:00 0HLP0JU99L5MF:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 75.2898ms (afa2e885)
+2019-08-14T17:12:42.5005123+07:00 0HLP0JU99L5MF:00000001 [INF] Request finished in 141.1919ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:12:42.8506973+07:00 0HLP0JU99L5MF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:12:42.8596332+07:00 0HLP0JU99L5MF:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:12:42.8672612+07:00 0HLP0JU99L5MF:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:12:42.8752819+07:00 0HLP0JU99L5MF:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:12:42.9047543+07:00 0HLP0JU99L5MF:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:12:42.9298143+07:00 0HLP0JU99L5MF:00000002 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:12:42.9462484+07:00 0HLP0JU99L5MF:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:42.9592469+07:00 0HLP0JU99L5MF:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:42.9753048+07:00 0HLP0JU99L5MF:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:43.0027128+07:00 0HLP0JU99L5MF:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:43.0120591+07:00 0HLP0JU99L5MF:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:12:43.0260987+07:00 0HLP0JU99L5MF:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 152.3159ms (afa2e885)
+2019-08-14T17:12:43.0836292+07:00 0HLP0JU99L5MF:00000002 [INF] Request finished in 186.1386ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:12:50.0234012+07:00 0HLP0JU99L5MF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:12:50.0855243+07:00 0HLP0JU99L5MF:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:12:50.0946504+07:00 0HLP0JU99L5MF:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:12:50.1079072+07:00 0HLP0JU99L5MF:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:12:50.1169877+07:00 0HLP0JU99L5MF:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:12:50.1454161+07:00 0HLP0JU99L5MF:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:12:50.1835070+07:00 0HLP0JU99L5MF:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:12:50.4435384+07:00 0HLP0JU99L5MF:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 100.8633ms (afa2e885)
+2019-08-14T17:12:50.7565850+07:00 0HLP0JU99L5MF:00000003 [INF] Request finished in 447.3014ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:12:50.8007884+07:00 0HLP0JU99L5MF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:12:50.8099696+07:00 0HLP0JU99L5MF:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:12:50.8340948+07:00 0HLP0JU99L5MF:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:12:50.8723922+07:00 0HLP0JU99L5MF:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:12:50.8998303+07:00 0HLP0JU99L5MF:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:12:50.9325405+07:00 0HLP0JU99L5MF:00000004 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:12:50.9451256+07:00 0HLP0JU99L5MF:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:50.9621508+07:00 0HLP0JU99L5MF:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:50.9743521+07:00 0HLP0JU99L5MF:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:50.9884186+07:00 0HLP0JU99L5MF:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:12:50.9966790+07:00 0HLP0JU99L5MF:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:12:51.0084675+07:00 0HLP0JU99L5MF:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 186.5257ms (afa2e885)
+2019-08-14T17:12:51.0487022+07:00 0HLP0JU99L5MF:00000004 [INF] Request finished in 234.3824ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:14:01.5845688+07:00 0HLP0JU99L5MG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:14:01.5944056+07:00 0HLP0JU99L5MG:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:14:01.6347217+07:00 0HLP0JU99L5MG:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:14:01.6642700+07:00 0HLP0JU99L5MG:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:14:01.6833910+07:00 0HLP0JU99L5MG:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:14:01.7198018+07:00 0HLP0JU99L5MG:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:14:01.7442302+07:00 0HLP0JU99L5MG:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:14:01.7597621+07:00 0HLP0JU99L5MG:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:14:01.7774045+07:00 0HLP0JU99L5MG:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:14:01.7874344+07:00 0HLP0JU99L5MG:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:14:01.7963394+07:00 0HLP0JU99L5MG:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:14:01.8109692+07:00 0HLP0JU99L5MG:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 202.0369ms (afa2e885)
+2019-08-14T17:14:01.8829876+07:00 0HLP0JU99L5MG:00000001 [INF] Request finished in 251.3699ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:15:02.4711089+07:00 0HLP0JU99L5MH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:15:02.4824159+07:00 0HLP0JU99L5MH:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:15:02.4890675+07:00 0HLP0JU99L5MH:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:15:02.4963689+07:00 0HLP0JU99L5MH:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:15:02.5024509+07:00 0HLP0JU99L5MH:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:15:02.5123330+07:00 0HLP0JU99L5MH:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:15:02.5304236+07:00 0HLP0JU99L5MH:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:15:02.6886223+07:00 0HLP0JU99L5MH:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 50.1224ms (afa2e885)
+2019-08-14T17:15:02.8786564+07:00 0HLP0JU99L5MH:00000001 [INF] Request finished in 232.8211ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:15:03.0602597+07:00 0HLP0JU99L5MI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:15:03.1094170+07:00 0HLP0JU99L5MH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44344/favicon.ico   (ca22a1cb)
+2019-08-14T17:15:03.1258219+07:00 0HLP0JU99L5MI:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:15:03.1552670+07:00 0HLP0JU99L5MI:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:15:03.1667764+07:00 0HLP0JU99L5MH:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\My Store\2.Project\Tedu\teducoreapp\TeduCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2019-08-14T17:15:03.1721192+07:00 0HLP0JU99L5MI:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:15:03.1835287+07:00 0HLP0JU99L5MI:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:15:03.2264589+07:00 0HLP0JU99L5MI:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:15:03.2380159+07:00 0HLP0JU99L5MH:00000002 [INF] Request finished in 153.914ms 200 image/x-icon (791a596a)
+2019-08-14T17:15:03.2775048+07:00 0HLP0JU99L5MI:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:15:03.3113995+07:00 0HLP0JU99L5MI:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:15:03.3346295+07:00 0HLP0JU99L5MI:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:15:03.3576278+07:00 0HLP0JU99L5MI:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:15:03.3709613+07:00 0HLP0JU99L5MI:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:15:03.3950808+07:00 0HLP0JU99L5MI:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 241.9352ms (afa2e885)
+2019-08-14T17:15:03.4132091+07:00 0HLP0JU99L5MI:00000001 [INF] Request finished in 570.0469ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:19:34.1451881+07:00 0HLP0JU99L5MJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:19:34.1545083+07:00 0HLP0JU99L5MJ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:19:34.1612907+07:00 0HLP0JU99L5MJ:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:19:34.1713478+07:00 0HLP0JU99L5MJ:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:19:34.1843007+07:00 0HLP0JU99L5MJ:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:19:34.1993295+07:00 0HLP0JU99L5MJ:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:19:34.2436437+07:00 0HLP0JU99L5MJ:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:19:34.2569757+07:00 0HLP0JU99L5MJ:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 90.4218ms (afa2e885)
+2019-08-14T17:19:34.3499379+07:00 0HLP0JU99L5MJ:00000001 [INF] Request finished in 118.3192ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:19:34.5832569+07:00 0HLP0JU99L5MJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:19:34.6096186+07:00 0HLP0JU99L5MJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:19:34.6310498+07:00 0HLP0JU99L5MJ:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:19:34.6503605+07:00 0HLP0JU99L5MJ:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:19:34.6952660+07:00 0HLP0JU99L5MJ:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:19:34.7731216+07:00 0HLP0JU99L5MJ:00000002 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:19:34.7880215+07:00 0HLP0JU99L5MJ:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:19:34.8065420+07:00 0HLP0JU99L5MJ:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:19:34.8198221+07:00 0HLP0JU99L5MJ:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:19:34.8328249+07:00 0HLP0JU99L5MJ:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:19:34.8433762+07:00 0HLP0JU99L5MJ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:19:34.8656247+07:00 0HLP0JU99L5MJ:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 233.2179ms (afa2e885)
+2019-08-14T17:19:34.9396482+07:00 0HLP0JU99L5MJ:00000002 [INF] Request finished in 304.1656ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:22:41.6893595+07:00 0HLP0JU99L5MK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:22:41.6970421+07:00 0HLP0JU99L5MK:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:22:41.7049826+07:00 0HLP0JU99L5MK:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:22:41.7114344+07:00 0HLP0JU99L5MK:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:22:41.7189780+07:00 0HLP0JU99L5MK:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:22:41.7278763+07:00 0HLP0JU99L5MK:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:22:41.7409795+07:00 0HLP0JU99L5MK:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:22:41.7568541+07:00 0HLP0JU99L5MK:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 44.9676ms (afa2e885)
+2019-08-14T17:22:41.8200024+07:00 0HLP0JU99L5MK:00000001 [INF] Request finished in 76.8674ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:22:42.3124742+07:00 0HLP0JU99L5MK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:22:42.3438735+07:00 0HLP0JU99L5MK:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:22:42.3936207+07:00 0HLP0JU99L5MK:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:22:42.4489652+07:00 0HLP0JU99L5MK:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:22:42.4643941+07:00 0HLP0JU99L5MK:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:22:42.4789386+07:00 0HLP0JU99L5MK:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:22:42.4957984+07:00 0HLP0JU99L5MK:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:22:42.5119679+07:00 0HLP0JU99L5MK:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:22:42.5649833+07:00 0HLP0JU99L5MK:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:22:42.5762675+07:00 0HLP0JU99L5MK:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:22:42.5852112+07:00 0HLP0JU99L5MK:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:22:42.5925196+07:00 0HLP0JU99L5MK:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 240.873ms (afa2e885)
+2019-08-14T17:22:42.6003625+07:00 0HLP0JU99L5MK:00000002 [INF] Request finished in 518.2049ms 200 application/json; charset=utf-8 (791a596a)
+2019-08-14T17:23:25.0612197+07:00 0HLP0JU99L5MK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44344/admin/productcategory/index   (ca22a1cb)
+2019-08-14T17:23:25.0704884+07:00 0HLP0JU99L5MK:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:23:25.0779687+07:00 0HLP0JU99L5MK:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:23:25.0848297+07:00 0HLP0JU99L5MK:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:23:25.0938360+07:00 0HLP0JU99L5MK:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2019-08-14T17:23:25.1056893+07:00 0HLP0JU99L5MK:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:23:25.1194750+07:00 0HLP0JU99L5MK:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2019-08-14T17:23:25.2866998+07:00 0HLP0JU99L5MK:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 50.0452ms (afa2e885)
+2019-08-14T17:23:25.4975190+07:00 0HLP0JU99L5MK:00000003 [INF] Request finished in 241.8059ms 200 text/html; charset=utf-8 (791a596a)
+2019-08-14T17:23:25.5160786+07:00 0HLP0JU99L5ML:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44344/Admin/ProductCategory/GetAll   (ca22a1cb)
+2019-08-14T17:23:25.5269541+07:00 0HLP0JU99L5ML:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-08-14T17:23:25.6137484+07:00 0HLP0JU99L5ML:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-08-14T17:23:25.7267715+07:00 0HLP0JU99L5ML:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-08-14T17:23:25.7465113+07:00 0HLP0JU99L5ML:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-08-14T17:23:25.7766518+07:00 0HLP0JU99L5ML:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-08-14T17:23:25.8035421+07:00 0HLP0JU99L5ML:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:23:25.8354848+07:00 0HLP0JU99L5ML:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:23:25.8569997+07:00 0HLP0JU99L5ML:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:23:25.8960947+07:00 0HLP0JU99L5ML:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-08-14T17:23:25.9191771+07:00 0HLP0JU99L5ML:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-08-14T17:23:25.9368835+07:00 0HLP0JU99L5ML:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 391.2489ms (afa2e885)
+2019-08-14T17:23:25.9822326+07:00 0HLP0JU99L5ML:00000001 [INF] Request finished in 433.894ms 200 application/json; charset=utf-8 (791a596a)
