@@ -92,9 +92,10 @@ namespace TeduCoreApp.Application.Implementation
         {
             var source = _productCategoryRepository.FindById(sourceId);
             var target = _productCategoryRepository.FindById(targetId);
-            int tempOder = source.SortOrder;
+            int tempOrder = source.SortOrder;
             source.SortOrder = target.SortOrder;
-            target.SortOrder = tempOder;
+            target.SortOrder = tempOrder;
+
             _productCategoryRepository.Update(source);
             _productCategoryRepository.Update(target);
         }
@@ -106,7 +107,8 @@ namespace TeduCoreApp.Application.Implementation
 
         public void Update(ProductCategoryViewModel productCategoryVm)
         {
-            throw new NotImplementedException();
+            var productCategory = Mapper.Map<ProductCategoryViewModel, ProductCategory>(productCategoryVm);
+            _productCategoryRepository.Update(productCategory);
         }
 
         public void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)
@@ -114,7 +116,8 @@ namespace TeduCoreApp.Application.Implementation
             var sourceCategory = _productCategoryRepository.FindById(sourceId);
             sourceCategory.ParentId = targetId;
             _productCategoryRepository.Update(sourceCategory);
-            // Get all sibling
+
+            //Get all sibling
             var sibling = _productCategoryRepository.FindAll(x => items.ContainsKey(x.Id));
             foreach(var child in sibling)
             {
