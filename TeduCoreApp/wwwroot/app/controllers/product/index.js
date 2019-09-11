@@ -20,6 +20,12 @@
                 loadData();
             }
         });
+        $("#btnCreate").on('click', function () {
+            resetFormMaintainance();
+            initTreeDropDownCategory();
+            $('#modal-add-edit').modal('show');
+
+        });
     }
     function loadCategories() {
         $.ajax({
@@ -39,6 +45,55 @@
             }
         });
     }
+    function initTreeDropDownCategory(selectedId) {
+        $.ajax({
+            url: "/Admin/ProductCategory/GetAll",
+            type: 'GET',
+            dataType: 'json',
+            async: false,
+            success: function (response) {
+                var data = [];
+                $.each(response, function (i, item) {
+                    data.push({
+                        id: item.Id,
+                        text: item.Name,
+                        parentId: item.ParentId,
+                        sortOrder: item.SortOrder
+                    });
+                });
+                var arr = tedu.unflattern(data);
+                $('#ddlCategoryIdM').combotree({
+                    data: arr
+                });
+                if (selectedId != undefined) {
+                    $('#ddlCategoryIdM').combotree('setValue', selectedId);
+                }
+            }
+        });
+    function resetFormMaintainance() {
+        $('#hidIdM').val(0);
+        $('#txtNameM').val('');
+        initTreeDropDownCategory('');
+
+        $('#txtDescM').val('');
+        $('#txtUnitM').val('');
+
+        $('#txtPriceM').val('0');
+        $('#txtOriginalPriceM').val('');
+        $('#txtPromotionPriceM').val('');
+
+        //$('#txtImageM').val('');
+
+        $('#txtTagM').val('');
+        $('#txtMetakeywordM').val('');
+        $('#txtMetaDescriptionM').val('');
+        $('#txtSeoPageTitleM').val('');
+        $('#txtSeoAliasM').val('');
+
+        //CKEDITOR.instances.txtContentM.setData('');
+        $('#ckStatusM').prop('checked', true);
+        $('#ckHotM').prop('checked', false);
+        $('#ckShowHomeM').prop('checked', false);
     function loadData(isPageChanged) {
         var template = $('#table-template').html();
         var render = "";
