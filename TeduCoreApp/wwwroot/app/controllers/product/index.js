@@ -65,7 +65,7 @@
                     $('#txtOriginalPriceM').val(data.OriginalPrice);
                     $('#txtPromotionPriceM').val(data.PromotionPrice);
 
-                    // $('#txtImageM').val(data.ThumbnailImage);
+                   // $('#txtImageM').val(data.ThumbnailImage);
 
                     $('#txtTagM').val(data.Tags);
                     $('#txtMetakeywordM').val(data.SeoKeywords);
@@ -186,10 +186,8 @@
         });
 
     }
-
     function registerControls() {
         CKEDITOR.replace('txtContent', {});
-
         //Fix: cannot click on element ck in modal
         $.fn.modal.Constructor.prototype.enforceFocus = function () {
             $(document)
@@ -205,7 +203,6 @@
                     }
                 }, this));
         };
-
     }
     function initTreeDropDownCategory(selectedId) {
         $.ajax({
@@ -253,7 +250,7 @@
         $('#txtSeoPageTitleM').val('');
         $('#txtSeoAliasM').val('');
 
-        //CKEDITOR.instances.txtContentM.setData('');
+        CKEDITOR.instances.txtContent.setData('');
         $('#ckStatusM').prop('checked', true);
         $('#ckHotM').prop('checked', false);
         $('#ckShowHomeM').prop('checked', false);
