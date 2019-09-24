@@ -41,6 +41,32 @@
             $('#modal-add-edit').modal('show');
 
         });
+        $('#btnSelectImg').on('click', function () {
+            $('#fileInputImage').click();
+        });
+        $("#fileInputImage").on('change', function () {
+            var fileUpload = $(this).get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                data.append(files[i].name, files[i]);
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Upload/UploadImage",
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (path) {
+                    $('#txtImage').val(path);
+                    tedu.notify('Upload image succesful!', 'success');
+
+                },
+                error: function () {
+                    tedu.notify('There was error uploading files!', 'error');
+                }
+            });
+        });
         $('body').on('click', '.btn-edit', function (e) {
             e.preventDefault();
             var that = $(this).data('id');
@@ -65,7 +91,7 @@
                     $('#txtOriginalPriceM').val(data.OriginalPrice);
                     $('#txtPromotionPriceM').val(data.PromotionPrice);
 
-                   // $('#txtImageM').val(data.ThumbnailImage);
+                    // $('#txtImageM').val(data.ThumbnailImage);
 
                     $('#txtTagM').val(data.Tags);
                     $('#txtMetakeywordM').val(data.SeoKeywords);
@@ -186,8 +212,10 @@
         });
 
     }
+
     function registerControls() {
         CKEDITOR.replace('txtContent', {});
+
         //Fix: cannot click on element ck in modal
         $.fn.modal.Constructor.prototype.enforceFocus = function () {
             $(document)
@@ -203,6 +231,7 @@
                     }
                 }, this));
         };
+
     }
     function initTreeDropDownCategory(selectedId) {
         $.ajax({
@@ -250,7 +279,7 @@
         $('#txtSeoPageTitleM').val('');
         $('#txtSeoAliasM').val('');
 
-        CKEDITOR.instances.txtContent.setData('');
+        //CKEDITOR.instances.txtContentM.setData('');
         $('#ckStatusM').prop('checked', true);
         $('#ckHotM').prop('checked', false);
         $('#ckShowHomeM').prop('checked', false);
