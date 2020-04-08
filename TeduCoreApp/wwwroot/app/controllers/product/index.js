@@ -86,7 +86,7 @@
         });
 
         $('#btnSave').on('click', function (e) {
-            saveProduct(that);
+            saveProduct();
         });
 
         $('#btn-import').on('click', function () {
@@ -161,29 +161,6 @@
 
     }
 
-    function deleteProduct(id) {
-        tedu.confirm('Are you sure to delete?', function () {
-            $.ajax({
-                type: "POST",
-                url: "/Admin/Product/Delete",
-                data: { id: that },
-                dataType: "json",
-                beforeSend: function () {
-                    tedu.startLoading();
-                },
-                success: function (response) {
-                    tedu.notify('Delete successful', 'success');
-                    tedu.stopLoading();
-                    loadData();
-                },
-                error: function (status) {
-                    tedu.notify('Has an error in delete progress', 'error');
-                    tedu.stopLoading();
-                }
-            });
-        });
-    }
-
     function saveProduct() {
         if ($('#frmMaintainance').valid()) {
             e.preventDefault();
@@ -255,6 +232,29 @@
         }
     }
 
+    function deleteProduct(id) {
+        tedu.confirm('Are you sure to delete?', function () {
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Product/Delete",
+                data: { id: that },
+                dataType: "json",
+                beforeSend: function () {
+                    tedu.startLoading();
+                },
+                success: function (response) {
+                    tedu.notify('Delete successful', 'success');
+                    tedu.stopLoading();
+                    loadData();
+                },
+                error: function (status) {
+                    tedu.notify('Has an error in delete progress', 'error');
+                    tedu.stopLoading();
+                }
+            });
+        });
+    }
+
     function loadDetails(id) {
         $.ajax({
             type: "GET",
@@ -321,6 +321,7 @@
                 $('#ddlCategoryIdM').combotree({
                     data: arr
                 });
+
                 $('#ddlCategoryIdImportExcel').combotree({
                     data: arr
                 });

@@ -21,7 +21,8 @@ namespace TeduCoreApp.Areas.Admin.Controllers
         private IProductCategoryService _productCategoryService;
         private readonly IHostingEnvironment _hostingEnvironment;
 
-        public ProductController(IProductService productService, IProductCategoryService productCategoryService,
+        public ProductController(IProductService productService, 
+            IProductCategoryService productCategoryService,
             IHostingEnvironment hostingEnvironment)
         {
             _productService = productService;
@@ -134,7 +135,6 @@ namespace TeduCoreApp.Areas.Admin.Controllers
             }
             return new NoContentResult();
         }
-
         [HttpPost]
         public IActionResult ExportExcel()
         {
