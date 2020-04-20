@@ -32,8 +32,4 @@
     <ProjectReference Include="..\TeduCoreApp.Utilities\TeduCoreApp.Utilities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\export-files\" />
-  </ItemGroup>
-
 </Project>

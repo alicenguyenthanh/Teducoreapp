@@ -12,7 +12,7 @@ using TeduCoreApp.Data.Enums;
 namespace TeduCoreApp.Data.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200408082301_bill_customerid_nullable")]
+    [Migration("20171207134808_bill_customerid_nullable")]
     partial class bill_customerid_nullable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

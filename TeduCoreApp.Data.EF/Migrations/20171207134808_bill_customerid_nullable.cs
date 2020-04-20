@@ -8,6 +8,10 @@ namespace TeduCoreApp.Data.EF.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Bills_AppUsers_CustomerId",
+                table: "Bills");
+
             migrationBuilder.AlterColumn<string>(
                 name: "FunctionId",
                 table: "Permissions",
@@ -16,6 +20,13 @@ namespace TeduCoreApp.Data.EF.Migrations
                 nullable: false,
                 oldClrType: typeof(string),
                 oldMaxLength: 128);
+
+            migrationBuilder.AlterColumn<Guid>(
+                name: "CustomerId",
+                table: "Bills",
+                type: "uniqueidentifier",
+                nullable: true,
+                oldClrType: typeof(Guid));
 
             migrationBuilder.AlterColumn<string>(
                 name: "AnnouncementId",
@@ -35,10 +46,22 @@ namespace TeduCoreApp.Data.EF.Migrations
                 oldClrType: typeof(string),
                 oldMaxLength: 20,
                 oldNullable: true);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Bills_AppUsers_CustomerId",
+                table: "Bills",
+                column: "CustomerId",
+                principalTable: "AppUsers",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Bills_AppUsers_CustomerId",
+                table: "Bills");
+
             migrationBuilder.AlterColumn<string>(
                 name: "FunctionId",
                 table: "Permissions",
@@ -47,6 +70,14 @@ namespace TeduCoreApp.Data.EF.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(450)",
                 oldMaxLength: 128);
+
+            migrationBuilder.AlterColumn<Guid>(
+                name: "CustomerId",
+                table: "Bills",
+                nullable: false,
+                oldClrType: typeof(Guid),
+                oldType: "uniqueidentifier",
+                oldNullable: true);
 
             migrationBuilder.AlterColumn<string>(
                 name: "AnnouncementId",
@@ -66,6 +97,14 @@ namespace TeduCoreApp.Data.EF.Migrations
                 oldType: "nvarchar(450)",
                 oldMaxLength: 20,
                 oldNullable: true);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Bills_AppUsers_CustomerId",
+                table: "Bills",
+                column: "CustomerId",
+                principalTable: "AppUsers",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
     }
 }
