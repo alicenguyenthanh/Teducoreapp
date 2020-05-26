@@ -1,6 +1,7 @@
 ﻿var productController = function () {
     var quantityManagement = new QuantityManagement();
     var imageManagement = new ImageManagement();
+    var wholePriceManagement = new WholePriceManagement();
 
     this.initialize = function () {
         loadCategories();
@@ -9,6 +10,8 @@
         registerControls();
         quantityManagement.initialize();
         imageManagement.initialize();
+        wholePriceManagement.initialize();
+        
     }
 
     function registerEvents() {
