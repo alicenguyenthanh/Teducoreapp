@@ -231,7 +231,7 @@
                             FullName: item.FullName,
                             Id: item.Id,
                             UserName: item.UserName,
-                            Avatar: item.Avatar === undefined ? '<img src="/admin-side/images/user.png" width=25 />' : '<img src="' + item.Avatar + '" width=25 />',
+                            Avatar: item.Avatar === undefined ? '<img src="/admin-side/~/client-side/images/user.png" width=25 />' : '<img src="' + item.Avatar + '" width=25 />',
                             DateCreated: tedu.dateTimeFormatJson(item.DateCreated),
                             Status: tedu.getStatus(item.Status)
                         });
