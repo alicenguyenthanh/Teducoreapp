@@ -207,6 +207,7 @@ namespace TeduCoreApp.Controllers
 
         [HttpGet]
         [AllowAnonymous]
+        [Route("register.html")]
         public IActionResult Register(string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
@@ -216,6 +217,7 @@ namespace TeduCoreApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [Route("register.html")]
         public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
@@ -244,6 +246,7 @@ namespace TeduCoreApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("login.html", Name = "Login")]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
@@ -254,6 +257,7 @@ namespace TeduCoreApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [Route("login.html", Name = "Login")]
         public IActionResult ExternalLogin(string provider, string returnUrl = null)
         {
             // Request a redirect to the external login provider.
