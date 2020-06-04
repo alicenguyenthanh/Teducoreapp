@@ -43,6 +43,7 @@ namespace TeduCoreApp.Controllers
 
         [HttpGet]
         [AllowAnonymous]
+        [Route("login.html", Name = "Login")]
         public async Task<IActionResult> Login(string returnUrl = null)
         {
             // Clear the existing external cookie to ensure a clean login process
@@ -55,6 +56,7 @@ namespace TeduCoreApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [Route("login.html", Name = "Login")]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
@@ -246,7 +248,6 @@ namespace TeduCoreApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Route("login.html", Name = "Login")]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
@@ -257,7 +258,6 @@ namespace TeduCoreApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        [Route("login.html", Name = "Login")]
         public IActionResult ExternalLogin(string provider, string returnUrl = null)
         {
             // Request a redirect to the external login provider.
