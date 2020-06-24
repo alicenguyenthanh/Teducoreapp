@@ -98,6 +98,11 @@ namespace TeduCoreApp
             services.AddTransient<IProductQuantityRepository, ProductQuantityRepository>();
             services.AddTransient<IProductImageRepository, ProductImageRepository>();
             services.AddTransient<IWholePriceRepository, WholePriceRepository>();
+            services.AddTransient<IBlogRepository, BlogRepository>();
+            services.AddTransient<IBlogTagRepository, BlogTagRepository>();
+            services.AddTransient<ISlideRepository, SlideRepository>();
+            services.AddTransient<ISystemConfigRepository, SystemConfigRepository>();
+            services.AddTransient<IFooterRepository, FooterRepository>();
 
             //Serrvices
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
@@ -106,6 +111,8 @@ namespace TeduCoreApp
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IBillService, BillService>();
+            services.AddTransient<IBlogService, BlogService>();
+            services.AddTransient<ICommonService, CommonService>();
 
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
 
