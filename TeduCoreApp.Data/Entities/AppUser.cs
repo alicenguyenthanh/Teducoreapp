@@ -8,11 +8,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TeduCoreApp.Data.Entities
 {
+
     [Table("AppUsers")]
     public class AppUser : IdentityUser<Guid>, IDateTracking, ISwitchable
     {
-        public AppUser() {  }
-        public AppUser(Guid id, string fullName, string userName, 
+        public AppUser() { }
+        public AppUser(Guid id, string fullName, string userName,
             string email, string phoneNumber, string avatar, Status status)
         {
             Id = id;
