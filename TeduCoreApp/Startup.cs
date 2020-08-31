@@ -24,6 +24,7 @@ using TeduCoreApp.Helpers;
 using TeduCoreApp.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using TeduCoreApp.Authorization;
+using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace TeduCoreApp
 {
@@ -63,6 +64,12 @@ namespace TeduCoreApp
 
                 // User settings
                 options.User.RequireUniqueEmail = true;
+            });
+
+            services.AddRecaptcha(new RecaptchaOptions()
+            {
+                SiteKey = Configuration["Recaptcha:SiteKey"],
+                SecretKey = Configuration["Recaptcha:SecretKey"]
             });
 
             services.AddAutoMapper();
